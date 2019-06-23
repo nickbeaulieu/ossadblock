@@ -1,0 +1,13 @@
+{
+    "name": "ossadblocker",
+    "manifest_version": 2,
+    "version": "0.1.0",
+    "description": "A simple, open source ad blocker free for anyone to use and learn",
+    "permissions": [ "webRequest", "webRequestBlocking", "http://*/", "https://*/" ],
+    "background": {
+        "scripts": [ "domains_to_block.js", "blocker.js" ]
+    },
+    "browser_action": {
+        "default_popup": "popup.html"
+    }
+}
